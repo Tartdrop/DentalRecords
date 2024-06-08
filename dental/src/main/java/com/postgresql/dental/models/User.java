@@ -3,6 +3,7 @@ package com.postgresql.dental.models;
 import jakarta.persistence.*;
 import java.util.Date;
 
+@Table(name = "users")
 @Entity
 public class User {
 	@Id
