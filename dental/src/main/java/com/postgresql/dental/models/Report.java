@@ -2,6 +2,7 @@ package com.postgresql.dental.models;
 
 import jakarta.persistence.*;
 
+@Entity
 public class Report {
 	 @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)

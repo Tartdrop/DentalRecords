@@ -11,8 +11,12 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/records")
 public class RecordController {
-	@Autowired
-    private RecordService recordService;
+	 private final RecordService recordService;
+
+	    @Autowired
+	    public RecordController(RecordService recordService) {
+	        this.recordService = recordService;
+	    }
 
     @PostMapping
     public ResponseEntity<Record> createRecord(@RequestBody Record record) {
